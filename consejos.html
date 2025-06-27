@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consejos de Seguridad</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Ciberseguridad</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="amenazas.html">Amenazas</a></li>
+          <li class="nav-item"><a class="nav-link" href="consejos.html">Consejos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <h2>Buenas prácticas de seguridad en línea</h2>
+    <ul>
+      <li>Usa contraseñas seguras y únicas.</li>
+      <li>Habilita la autenticación de dos factores.</li>
+      <li>No hagas clic en enlaces sospechosos.</li>
+      <li>Mantén tu software actualizado.</li>
+    </ul>
+
+    <!-- Formulario -->
+    <h3>Solicita más información</h3>
+    <form id="contactoForm">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+    <!-- Modal -->
+    <button class="btn btn-info mt-4" data-bs-toggle="modal" data-bs-target="#testModal">Test de Seguridad</button>
+
+    <div class="modal fade" id="testModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Test de Seguridad</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>¿Qué es el phishing?</p>
+            <select class="form-select" id="respuesta">
+              <option value="0">Un tipo de comida</option>
+              <option value="1">Un ataque para robar información</option>
+              <option value="2">Un software antivirus</option>
+            </select>
+            <div id="feedback" class="mt-2"></div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success" id="btnEvaluar">Evaluar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
